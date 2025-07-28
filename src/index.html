@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="id" style="scroll-behavior: smooth;">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iuvo Consulting - Digital Solutions That Drive Results</title>
     <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "iuvo-dark": "#1a2332",
+              "iuvo-darker": "#0B1D2A",
+              "iuvo-teal": "#38ADA7",
+              "iuvo-teal-dark": "#38b2ac",
+            },
+            backgroundImage: {
+              "hero-gradient":
+                "linear-gradient(135deg, #0B1D2A 0%, #1a2332 50%, #2d3748 100%)",
+            },
+          },
+        },
+      };
+    </script> -->
   </head>
     <!-- Navigation -->
     <nav class="relative z-10 bg-[#0B1D2A] px-4 sm:px-6 lg:px-12 py-4 sm:py-6">
@@ -16,7 +35,7 @@
           <!-- Logo Image -->
            <a href="./index.html">
              <img
-               src="./img/logo.svg"
+               src="../img/logo.svg"
                alt="Iuvo Consulting Logo"
                class="w-40 hover:scale-105 transition-transform duration-300"
                loading="eager"
@@ -36,13 +55,13 @@
             >About us</a
           >
           <a
-            href="./index.html#service"
+            href="./service.html"
             class="text-gray-300 hover:text-[#38ADA7] transition-colors"
             >Our Services</a
           >
           <a href="contact.html">
             <button
-              class="bg-[#38ADA7] text-white px-6 py-3 rounded-full font-medium hover:bg-[#4f8280] transition-colors cursor-pointer"
+              class="bg-[#38ADA7] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#4f8280] transition-colors cursor-pointer"
             >
               Contact us
             </button>
@@ -76,7 +95,7 @@
       >
         <a
           href="./index.html"
-          class="text-white text-xl sm:text-2xl hover:text-[#38ADA7] transition-colors"
+          class="text-white text-xl sm:text-2xl font-medium hover:text-[#38ADA7] transition-colors"
           onclick="toggleMobileMenu()"
           >Home</a
         >
@@ -87,14 +106,14 @@
           >About us</a
         >
         <a
-          href="./index.html#service"
+          href="./service.html"
           class="text-gray-300 text-xl sm:text-2xl hover:text-[#38ADA7] transition-colors"
           onclick="toggleMobileMenu()"
           >Our Services</a
         >
         <a href="contact.html">
           <button
-            class="bg-[#38ADA7] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg hover:bg-[#38ADA7]-dark transition-colors"
+            class="bg-[#38ADA7] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-[#38ADA7]-dark transition-colors"
             onclick="toggleMobileMenu()"
           >
             Contact us
@@ -122,7 +141,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hidden sm:block xl:min-h-screen bg-[#0B1D2A] relative overflow-hidden">
+    <section class="xl:min-h-screen bg-[#0B1D2A] relative overflow-hidden">
       <!-- Hero Content -->
       <div class="relative z-10 px-4 sm:px-6 lg:px-12 py-8 sm:py-12 lg:py-20">
         <div
@@ -143,13 +162,11 @@
                 business improvement, business efficiency, operational
                 effectiveness, Human Capital Modernization
               </p>
-              <a href="about.html">
-                <button
-                  class="bg-[#38ADA7] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base text-[20px] hover:bg-[#38ADA7]-dark transition-colors cursor-pointer"
-                >
-                  About us
-                </button>
-              </a>
+              <button
+                class="bg-[#38ADA7] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base text-[20px] hover:bg-[#38ADA7]-dark transition-colors"
+              >
+                About us
+              </button>
             </div>
           </div>
           <!-- Right Content - Hero Image -->
@@ -164,7 +181,7 @@
                 class="absolute top-3 left-3 sm:top-1 sm:left-1 md:top-1 md:left-1 lg:top-1 lg:left-1 xl:top-1 xl:left-1 w-66 h-66 sm:w-72 sm:h-72 md:w-84 md:h-84 lg:w-[438px] lg:h-[438px] xl:w-[538px] xl:h-[538px] rounded-full overflow-hidden"
               >
                 <img
-                  src="./img/busines.png"
+                  src="../img/busines.png"
                   alt="Business meeting overhead view"
                   class="w-full h-full object-cover object-center"
                 />
@@ -196,70 +213,51 @@
       
     </section>
 
-    <section class="sm:hidden bg-[#0B1D2A] flex flex-col gap-5 items-center py-10">
-      <div class=" bg-no-repeat bg-cover bg-center pb-16 px-4" style="background-image: url('./img/bg-hero.svg');">
-        <img src="./img/hero-mobile.png" alt="bg-hero" class="">
-        <div class="flex flex-col gap-0 -mt-24">
-          <p class="text-white text-[14px] text-center">Digital Solutions That Drive Results </p>
-          <h1 class="text-white text-[32px] font-bold text-center">Unlocking Growth</h1>
-          <h1 class="text-[#1f605e] text-[32px] font-bold text-center">Through Digital</h1>
-          <p class="text-white text-[12px] text-center mt-2">for UMKM, expectation for business outcome, our expertise business improvement, business efficiency, operational effectiveness, Human Capital Modernization</p>
-        </div>
-      </div>
-        <a href="about.html">
-            <button
-                  class="bg-[#38ADA7] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base text-[20px] hover:bg-[#38ADA7]-dark transition-colors cursor-pointer"
-                >
-                  About us
-            </button>
-        </a>
-    </section>
-
-    <section class="bg-[#E9FFFE] flex-row justify-items-center px-4 sm:px-6 lg:px-12 py-8 sm:py-12" style="background-image: url('./img/bg-sec2.svg');">
+    <section class="bg-[#E9FFFE] flex-row justify-items-center px-4 sm:px-6 lg:px-12 py-8 sm:py-12" style="background-image: url('../img/bg-sec2.svg');">
       <div class="max-w-6xl w-full py-20 flex-column gap-20">
         <h2 class="text-[30px] text-center"><span class="font-bold">We are looking for successful brands</span><br>to help them grow faster without losing their essence.</h2>
         <p class="text-[20px] sm:text-[28px] font-bold mt-20">You can start your process with iuvo if:</p>
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20">
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon1.svg" alt="icon1">
+            <img src="../img/icon1.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Been experiencing difficulties in maintaining or improving your profit margins</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon6.svg" alt="icon1">
+            <img src="../img/icon6.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Need to improve your human resource experience in digital</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon2.svg" alt="icon1">
+            <img src="../img/icon2.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Are you satisfied with your current document management system?</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon7.svg" alt="icon1">
+            <img src="../img/icon7.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">You need data solution insight to improve customer engagement</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon3.svg" alt="icon1">
+            <img src="../img/icon3.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Concerns regarding the security or accessibility of your documents</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon8.svg" alt="icon1">
+            <img src="../img/icon8.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">You need a specific customized business solution-> Tailor the project to your specific needs and objectives, customized to meet your specific goals and deliverables</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon4.svg" alt="icon1">
+            <img src="../img/icon4.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Difficulties on your logistic and warehousing management?</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon9.svg" alt="icon1">
+            <img src="../img/icon9.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Need to improve your workflow efficiency</p>
           </div>
           <div class="flex flex-row gap-3 items-center">
-            <img src="./img/icon5.svg" alt="icon1">
+            <img src="../img/icon5.svg" alt="icon1">
             <p class="font-medium text-[#3D484D] text-[20px]">Do you need to leverage your digital marketing?</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-[#0B1D2A] flex-row justify-items-center px-4 sm:px-6 lg:px-12 py-8 sm:py-12" id="service"> 
+    <section class="bg-[#0B1D2A] flex-row justify-items-center px-4 sm:px-6 lg:px-12 py-8 sm:py-12"> 
       <div class="max-w-6xl py-20 flex flex-col gap-20">
         <div class="flex flex-col sm:flex-row gap-5 justify-between items-center">
           <div>
@@ -269,70 +267,60 @@
           <button class="bg-[#38ADA7] text-white px-10 py-3 rounded-full h-fit" >Contact Us</button>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-          <article class=" flex flex-col gap-10 bg-[#E9FFFE] p-5 rounded-xl justify-between">
+          <article class=" flex flex-col gap-5 bg-[#E9FFFE] p-5 rounded-xl justify-between">
             <div class=" flex flex-col gap-5">
               <header class="flex flex-row gap-3">
-                <img src="./img/icon10.svg" alt="">
+                <img src="../img/icon10.svg" alt="">
                 <h2 class="text-black font-semibold text-[24px] leading-8">Business Diversification Consulting</h2>
               </header>
               <p class="text-[16px] text-[#3D484D]">Assisting SMEs in identifying and exploring new revenue streams, developing new products/services, expanding into new markets (local and international), and creating more sustainable business models.</p>
               <p class="text-[16px] font-medium text-[#38ADA7]">Market research, competitive analysis, product development, go-to-market strategies, financial projections, and access to relevant networks.</p>
             </div>
-            <a href="./service.html">
-              <button class="w-full cursor-pointer bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
-            </a>
+            <button class="bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
           </article>
-          <article class=" flex flex-col gap-10 bg-[#E9FFFE] p-5 rounded-xl justify-between">
+          <article class=" flex flex-col gap-5 bg-[#E9FFFE] p-5 rounded-xl justify-between">
             <div class=" flex flex-col gap-5">
               <header class="flex flex-row gap-3">
-                <img src="./img/icon11.svg" alt="">
+                <img src="../img/icon11.svg" alt="">
                 <h2 class="text-black font-semibold text-[24px] leading-8">Digital Transformation Consulting</h2>
               </header>
               <p class="text-[16px] text-[#3D484D]">Guiding SMEs in leveraging digital technologies to improve their operations, enhance customer engagement, and increase competitiveness</p>
               <p class="text-[16px] font-medium text-[#38ADA7]">Digital marketing strategies (SEO, social media, online advertising), e-commerce solutions, website development, CRM implementation, data analytics, cybersecurity, and digital skills training for employees.</p>
             </div>
-            <a href="service2.html">
-              <button class="w-full cursor-pointer bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
-            </a>
+            <button class="bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
           </article>
-          <article class=" flex flex-col gap-10 bg-[#E9FFFE] p-5 rounded-xl justify-between">
+          <article class=" flex flex-col gap-5 bg-[#E9FFFE] p-5 rounded-xl justify-between">
             <div class=" flex flex-col gap-5">
               <header class="flex flex-row gap-3">
-                <img src="./img/icon12.svg" alt="">
+                <img src="../img/icon12.svg" alt="">
                 <h2 class="text-black font-semibold text-[24px] leading-8">Financial Advisory Services</h2>
               </header>
               <p class="text-[16px] text-[#3D484D]">Helping SMEs access funding options, improve financial management, and develop sustainable financial strategies.</p>
               <p class="text-[16px] font-medium text-[#38ADA7]">Financial planning and budgeting, access to finance programs (loans, grants), investment analysis, risk management, and financial literacy training.</p>
             </div>
-            <a href="service3.html">
-              <button class="w-full cursor-pointer bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
-            </a>
+            <button class="bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
           </article>
-          <article class=" flex flex-col gap-10 bg-[#E9FFFE] p-5 rounded-xl justify-between">
+          <article class=" flex flex-col gap-5 bg-[#E9FFFE] p-5 rounded-xl justify-between">
             <div class=" flex flex-col gap-5">
               <header class="flex flex-row gap-3">
-                <img src="./img/icon13.svg" alt="">
+                <img src="../img/icon13.svg" alt="">
                 <h2 class="text-black font-semibold text-[24px] leading-8">Human Capital Development Consulting</h2>
               </header>
               <p class="text-[16px] text-[#3D484D]">Addressing skill gaps and enhancing employee performance</p>
               <p class="text-[16px] font-medium text-[#38ADA7]">Skills assessments, training programs (technical and soft skills), recruitment and selection support, employee development programs, and performance management systems.</p>
             </div>
-            <a href="service4.html">
-              <button class="w-full cursor-pointer bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
-            </a>
+            <button class="bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
           </article>
-          <article class=" flex flex-col gap-10 bg-[#E9FFFE] p-5 rounded-xl justify-between">
+          <article class=" flex flex-col gap-5 bg-[#E9FFFE] p-5 rounded-xl justify-between">
             <div class=" flex flex-col gap-5">
               <header class="flex flex-row gap-3">
-                <img src="./img/icon14.svg" alt="">
+                <img src="../img/icon14.svg" alt="">
                 <h2 class="text-black font-semibold text-[24px] leading-8">Sustainability Consulting</h2>
               </header>
               <p class="text-[16px] text-[#3D484D]">Helping SMEs adopt sustainable business practices and minimize their environmental impact.</p>
               <p class="text-[16px] font-medium text-[#38ADA7]">Environmental impact assessments, eco-friendly product development, waste management solutions, energy efficiency strategies, and certifications for sustainable tourism practices.</p>
             </div>
-            <a href="service5.html">
-              <button class="w-full cursor-pointer bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
-            </a>
+            <button class="bg-[#38ADA7] text-white font-medium py-3 px-10 rounded-full">More</button>
           </article>
         </div>
       </div>
@@ -343,7 +331,7 @@
         <div class="flex flex-col gap-10">
           <div class="flex flex-row justify-between gap-10 sm:gap-20 flex-wrap sm:flex-nowrap ">
             <div class="flex flex-col gap-5 sm:w-[40%]">
-              <img src="./img/logo.svg" alt="logo" class="w-50">
+              <img src="../img/logo.svg" alt="logo" class="w-50">
               <h3 class="text-[#E8965A] font-semibold text-[20px] ">Digital Solutions That Drive Results</h3>
               <div class="flex flex-col gap-2">
                 <p class="text-[#B6C9C9] text-[14px]">Questions and contact</p>
@@ -375,7 +363,7 @@
                 Privacy Policy
               </li>
             </ul>
-            <img src="./img/logo-mini.svg" alt="">
+            <img src="../img/logo-mini.svg" alt="">
           </div>
         </div>
       </div>
