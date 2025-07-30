@@ -15,14 +15,14 @@
         <!-- Logo -->
         <div class="flex items-center space-x-2 sm:space-x-3">
           <!-- Logo Image -->
-           <a href="./index.html">
-             <img
-               src="./img/logo.svg"
-               alt="Iuvo Consulting Logo"
-               class="w-40 hover:scale-105 transition-transform duration-300"
-               loading="eager"
-             />
-             </a>
+          <a href="./index.html">
+            <img
+              src="./img/logo.svg"
+              alt="Iuvo Consulting Logo"
+              class="w-40 hover:scale-105 transition-transform duration-300"
+              loading="eager"
+            />
+          </a>
         </div>
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center space-x-8">
@@ -122,71 +122,142 @@
       </div>
     </div>
 
-    <section class="bg-cover bg-no-repeat flex-row justify-items-center relative" style="background-image: url('./img/bg-contact.png');">
-      <div class="bg-[#0B1D2A] opacity-90 w-full h-full py-20 flex-row justify-items-center absolute z-0">
-        </div>
-        <div class="max-w-6xl w-full flex flex-col gap-10 z-1 relative px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
-          <h1 class="text-center font-semibold text-[30px] text-white ">Contact Us</h1>
-          <form action="" class="flex flex-col gap-3">
-            <div class="flex flex-col sm:flex-row gap-3">
-              <input type="text" name="name" id="name" class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full" placeholder="Name"/>
-              <input type="text" name="company" id="company" class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full" placeholder="Company"/>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-3">
-              <input type="number" name="phone" id="phone" class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full" placeholder="Phone"/>
-              <input type="email" name="email" id="email" class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full" placeholder="Email"/>
-            </div>
-            <textarea name="message" id="message" class="min-h-52 bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"></textarea>
-            <button type="submit" class="bg-[#085E5A] rounded-sm w-fit text-white px-20 py-3 self-center mt-5">Submit</button>
-          </form>
-        </div>
-      
+    <section
+      class="bg-cover bg-no-repeat flex-row justify-items-center relative"
+      style="background-image: url('./img/bg-contact.png')"
+    >
+      <div
+        class="bg-[#0B1D2A] opacity-90 w-full h-full py-20 flex-row justify-items-center absolute z-0"
+      ></div>
+      <div
+        class="max-w-6xl w-full flex flex-col gap-10 z-1 relative px-4 sm:px-6 lg:px-12 py-8 sm:py-12"
+      >
+        <h1 class="text-center font-semibold text-[30px] text-white">
+          Contact Us
+        </h1>
+        <form id="contactForm" class="flex flex-col gap-3">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="company"
+              id="company"
+              class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"
+              placeholder="Company"
+            />
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"
+              placeholder="Phone"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"
+              placeholder="Email"
+            />
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            class="min-h-52 bg-[#E9FFFE] text-[#38ADA7] focus:outline-0 rounded-sm px-3 py-3 w-full"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-[#085E5A] rounded-sm w-fit text-white px-20 py-3 self-center mt-5"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
 
-    <footer class="flex-row justify-items-center bg-[#0B1D2A] lg:py-20 px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+    <footer
+      class="flex-row justify-items-center bg-[#0B1D2A] lg:py-20 px-4 sm:px-6 lg:px-12 py-8 sm:py-12"
+    >
       <div class="max-w-6xl">
         <div class="flex flex-col gap-10">
-          <div class="flex flex-row justify-between gap-10 sm:gap-20 flex-wrap sm:flex-nowrap ">
+          <div
+            class="flex flex-row justify-between gap-10 sm:gap-20 flex-wrap sm:flex-nowrap"
+          >
             <div class="flex flex-col gap-5 sm:w-[40%]">
-              <img src="./img/logo.svg" alt="logo" class="w-50">
-              <h3 class="text-[#E8965A] font-semibold text-[20px] ">Digital Solutions That Drive Results</h3>
+              <img src="./img/logo.svg" alt="logo" class="w-50" />
+              <h3 class="text-[#E8965A] font-semibold text-[20px]">
+                Digital Solutions That Drive Results
+              </h3>
               <div class="flex flex-col gap-2">
                 <p class="text-[#B6C9C9] text-[14px]">Questions and contact</p>
-                <p class="text-white font-semibold text-[16px]">contact@iuvosolution.com</p>
+                <p class="text-white font-semibold text-[16px]">
+                  contact@iuvosolution.com
+                </p>
               </div>
             </div>
             <div class="flex flex-col gap-5 sm:w-[40%]">
-              <h3 class="text-white text-[20px] font-semibold ">Our Office</h3>
-              <p class="text-[#B6C9C9] text-[16px]">Montes Urales 619 Piso 3 [Third floor] Lomas de Chapultepec, CDMX 11000</p>
-              <p class="text-[#B6C9C9] text-[16px]">Mon - Fri 9:00am to 6:00pm (GMT-5 CDMX)</p>
+              <h3 class="text-white text-[20px] font-semibold">Our Office</h3>
+              <p class="text-[#B6C9C9] text-[16px]">
+                Menara Rajawali, Ground Floor Jl. DR. Ide Anak Agung Gde Agung,
+                Kawasan Mega Kuningan, Jakarta Selatan 12950
+              </p>
+              <p class="text-[#B6C9C9] text-[16px]">+62-21 80511688</p>
             </div>
             <div class="flex flex-col gap-5 sm:w-[20%]">
-              <h3 class="text-white text-[20px] font-semibold ">Navigation</h3>
+              <h3 class="text-white text-[20px] font-semibold">Navigation</h3>
               <div class="flex flex-col gap-2">
-                <a href="" class="text-[#B6C9C9]">Home</a>
-                <a href="" class="text-[#B6C9C9]">About Us</a>
-                <a href="" class="text-[#B6C9C9]">Our Service</a>
-                <a href="" class="text-[#B6C9C9]">Contact</a>
+                <a href="./index.html" class="text-[#B6C9C9]">Home</a>
+                <a href="./about.html" class="text-[#B6C9C9]">About Us</a>
+                <a href="./index.html#service" class="text-[#B6C9C9]"
+                  >Our Service</a
+                >
+                <a href="./contact.html" class="text-[#B6C9C9]">Contact</a>
               </div>
             </div>
           </div>
-          <div class="flex flex-row justify-between items-center border-t-1 border-[#b6c9c95e] py-3">
+          <div
+            class="flex flex-row justify-between items-center border-t-1 border-[#b6c9c95e] py-3"
+          >
             <p class="text-[#B6C9C9]">© 2020 - 2025 Iuvo</p>
-            <ul class="flex flex-row gap-3">
-              <li class="text-[#B6C9C9]">
-                Terms of Service
-              </li>
-              <li class="text-[#B6C9C9]">
-                Privacy Policy
-              </li>
-            </ul>
-            <img src="./img/logo-mini.svg" alt="">
+            <!-- <ul class="flex flex-row gap-3">
+              <li class="text-[#B6C9C9]">Terms of Service</li>
+              <li class="text-[#B6C9C9]">Privacy Policy</li>
+            </ul> -->
+            <img src="./img/logo-mini.svg" alt="" />
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
+      emailjs.init("jHb_uzK3TCNFFJ_rR");
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs.sendForm("service_ddn5cx3", "template_bssmrhc", this).then(
+            () => {
+              alert("Pesan berhasil dikirim!");
+              this.reset(); // kosongkan form
+            },
+            (error) => {
+              alert("Gagal mengirim: " + JSON.stringify(error));
+            }
+          );
+        });
+
       function toggleMobileMenu() {
         const mobileMenu = document.getElementById("mobile-menu");
         mobileMenu.classList.toggle("hidden");
