@@ -240,14 +240,14 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      emailjs.init("jHb_uzK3TCNFFJ_rR");
+      emailjs.init("VAas1ZaDmlToIWIVW");
 
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
 
-          emailjs.sendForm("service_ddn5cx3", "template_bssmrhc", this).then(
+          emailjs.sendForm("service_64ie6ch", "template_dey6um3", this).then(
             () => {
               alert("Pesan berhasil dikirim!");
               this.reset(); // kosongkan form
